@@ -21,7 +21,7 @@ class RailwayController(private val environment: Environment) {
 
     @GetMapping()
     fun all(): List<String> {
-        val env = environment["google.url"]
+        val env = environment["google"]
         return listOf("Amade", "Vasco", "Ali", "Google: $env")
     }
 
